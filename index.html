@@ -1,157 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ignacio Lostorto</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
 
-  <body>
-    <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Ignacio Lostorto</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarsExample01"
-          aria-controls="navbarsExample01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ignacio Lostorto</title>
+  <!--BOOTSTRAP CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <!--FONT AWESOME CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-        <div class="collapse navbar-collapse" id="navbarsExample01">
-          <ul class="navbar-nav me-auto mb-2">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./galeria.html">Galeria</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="blog.ignaciolostorto.com"
-                tabindex="-1"
-                aria-disabled="true"
-                >Blog</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div
-      class="p-5 mb-4 bg-light rounded-3"
-      style="background-image: url('./img/header.jpg'); color: white"
-    >
-      <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Ignacio Lostorto</h1>
-        <p class="col-md-8 fs-4">
-          Me llamo Ignacio Lostorto, soy un full-stack developer. Amo javascript
-          tengo conocimiento en node.js. Tengo estudios en Back-End y Front-End
-        </p>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Ignacio Lostorto</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
+        aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample01">
+        <ul class="navbar-nav me-auto mb-2">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="blog.ignaciolostorto.com" tabindex="-1" aria-disabled="true">Blog</a>
+          </li>
+        </ul>
       </div>
     </div>
-
-    <div class="container px-4 py-5" id="hanging-icons">
-      <h2 class="pb-2 border-bottom">Habilidades</h2>
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="col d-flex align-items-start">
-          <div>
-            <h2>Frontend</h2>
-            <p>Conocimientos en jquery, sass, vue.js, bootstrap, html y css</p>
-          </div>
+  </nav>
+  <div class="p-5 mb-4  rounded-3" id="header">
+    <div class="container-fluid py-5">
+      <div class="row">
+        <div class="col-md-7">
+          <h1 class="display-5 fw-bold bg-gradiant" id="title">Ignacio Lostorto</h1>
+          <p class="col-md-8 fs-4">
+            Me llamo Ignacio Lostorto, soy un full-stack developer. Amo javascript
+            tengo conocimiento en node.js. Tengo estudios en Back-End y Front-End
+          </p>
         </div>
-        <div class="col d-flex align-items-start">
+        <div class="col-md-5">
+          <img class="headerImg" src="img/robot.svg" alt="">
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom ">Habilidades</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div>
+          <h2>Frontend</h2>
+          <p>Conocimientos en jquery, sass, vue.js, bootstrap, html y css</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div>
+          <h2>Backend</h2>
+          <p>
+            Paragraph of text beneath the heading to explain the heading.
+            We'll add onto it with another sentence and probably just keep
+            going until we run out of words.
+          </p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div>
+          <h2>Diseño</h2>
+          <p>
+            Paragraph of text beneath the heading to explain the heading.
+            We'll add onto it with another sentence and probably just keep
+            going until we run out of words.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="pb-2 border-bottom">Cursos</h2>
+    <div class="list-group container py-5 col-md-5">
+      <a href="https://ha.dev/cursos/back-end-nodejs-inicial"
+        class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="./img/ha-logo.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0" />
+        <div class="d-flex gap-2 w-100 justify-content-between">
           <div>
-            <h2>Backend</h2>
-            <p>
-              Paragraph of text beneath the heading to explain the heading.
-              We'll add onto it with another sentence and probably just keep
-              going until we run out of words.
+            <h6 class="mb-0">Curso Back-End Node.js</h6>
+            <p class="mb-0 opacity-75">
+              Curso back-end realizado en hack academy
             </p>
           </div>
+          <small class="opacity-50 text-nowrap">now</small>
         </div>
-        <div class="col d-flex align-items-start">
+      </a>
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="./img/ha-logo.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0" />
+        <div class="d-flex gap-2 w-100 justify-content-between">
           <div>
-            <h2>Diseño</h2>
-            <p>
-              Paragraph of text beneath the heading to explain the heading.
-              We'll add onto it with another sentence and probably just keep
-              going until we run out of words.
-            </p>
+            <h6 class="mb-0">Curso front-end</h6>
+            <p class="mb-0 opacity-75">Curso de front-end hack-academy</p>
           </div>
+          <small class="opacity-50 text-nowrap">3d</small>
         </div>
-      </div>
+      </a>
     </div>
-    <div class="container">
-      <h2 class="pb-2 border-bottom">Cursos</h2>
-      <div class="list-group container py-5 col-md-5">
-        <a
-          href="https://ha.dev/cursos/back-end-nodejs-inicial"
-          class="list-group-item list-group-item-action d-flex gap-3 py-3"
-          aria-current="true"
-        >
-          <img
-            src="./img/ha-logo.png"
-            alt="twbs"
-            width="32"
-            height="32"
-            class="rounded-circle flex-shrink-0"
-          />
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <div>
-              <h6 class="mb-0">Curso Back-End Node.js</h6>
-              <p class="mb-0 opacity-75">
-                Curso back-end realizado en hack academy
-              </p>
-            </div>
-            <small class="opacity-50 text-nowrap">now</small>
-          </div>
-        </a>
-        <a
-          href="#"
-          class="list-group-item list-group-item-action d-flex gap-3 py-3"
-          aria-current="true"
-        >
-          <img
-            src="./img/ha-logo.png"
-            alt="twbs"
-            width="32"
-            height="32"
-            class="rounded-circle flex-shrink-0"
-          />
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <div>
-              <h6 class="mb-0">Curso front-end</h6>
-              <p class="mb-0 opacity-75">Curso de front-end hack-academy</p>
-            </div>
-            <small class="opacity-50 text-nowrap">3d</small>
-          </div>
-        </a>
-      </div>
-    </div>
+  </div>
 
-    <div class="container">
-      <footer
-        class="
+  <div class="container">
+    <footer class="
           d-flex
           flex-wrap
           justify-content-between
@@ -159,43 +130,41 @@
           py-3
           my-4
           border-top
-        "
-      >
-        <div class="col-md-4 d-flex align-items-center">
-          <a
-            href="/"
-            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-          >
-            <svg class="bi" width="30" height="24">
-              <use xlink:href="#bootstrap" />
-            </svg>
-          </a>
-        </div>
+        ">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+      </div>
 
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="text-muted" href="#">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-muted" href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-muted" href="#">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-        </ul>
-      </footer>
-    </div>
-    <a href="google.com">ass</a>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-muted" href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="#">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+  <!--BOOTSTRAP JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
 </html>
