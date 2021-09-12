@@ -75,3 +75,9 @@
 .headerImg {
   width: 100%;
 }
+
+@media screen and (max-width: 766px) {
+  .headerImg {
+    display: none;
+  }
+}
