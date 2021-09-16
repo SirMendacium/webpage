@@ -67,6 +67,8 @@
 }
 
 .bg-gradiant {
+ -webkit-background-clip: text;
+
   background-image: var(--bgGradiant);
   background-clip: text;
   color: transparent;
@@ -80,4 +82,25 @@
   .headerImg {
     display: none;
   }
+}
+
+.dark {
+  background-color: black;
+}
+
+.light {
+  background-color: white;
+}
+
+#sun {
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 7px;
+  margin-right: 5px;
+}
+
+#sun:hover {
+  background-color: gainsboro;
+  border-radius: 100%;
 }
