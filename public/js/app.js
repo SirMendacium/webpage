@@ -34,8 +34,9 @@ document.getElementById("sun").addEventListener("click", function () {
 	const btn = document.getElementById('sun')
 	const body = document.getElementById('body')
 	const title = document.getElementById('title')
+	title.classList.toggle('titleDark')
+	title.classList.toggle('titleWhite')
 
-	console.log(title.style.backgroundColor = 'black')
 	btn.classList.toggle('fa-sun');
 	btn.classList.toggle('fa-moon');
 	body.classList.toggle('bg-dark');

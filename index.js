@@ -1,14 +1,17 @@
 const express = require('express');
-
+const nunjucks = require('nunjucks')
 const app = express();
 
-app.get('/', (req, res) => res.send('Home Page Route'));
+app.get('/', (req, res) => res.render('home'));
 
-app.get('/about', (req, res) => res.send('About Page Route'));
 
-app.get('/portfolio', (req, res) => res.send('Portfolio Page Route'));
+app.use(express.static("public"));
+nunjucks.configure("views", {
+	autoescape: true,
+	express: app,
+});
 
-app.get('/contact', (req, res) => res.send('Contact Page Route'));
+app.set("view engine", "njk");
 
 const port = process.env.PORT || 3000;
 

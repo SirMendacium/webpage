@@ -52,24 +52,35 @@
     background: transparent;
   }
 }
-
+/*
 #title::before {
   background-color: white;
   animation: typewriter var(--typewriterSpeed) steps(16) 1s forwards;
+}
+*/
+
+.titleDark::before {
+  background-color: dark;
+  animation: typewriter var(--typewriterSpeed) steps(16) 1s forwards;  back
+}
+
+
+.titleWhite::before {
+  background-color: white;
+  animation: typewriter var(--typewriterSpeed) steps(16) 1s forwards;  back
 }
 
 #title::after {
   width: 0.125em;
   background-color: black;
-
   animation: typewriter var(--typewriterSpeed) steps(16) 1s forwards,
     blink 750ms steps(16) infinite;
 }
 
 .bg-gradiant {
- -webkit-background-clip: text;
+  -webkit-background-clip: text;
 
-  background-image: var(--bgGradiant);
+ background-image: var(--bgGradiant);
   background-clip: text;
   color: transparent;
 }
@@ -103,4 +114,8 @@
 #sun:hover {
   background-color: gainsboro;
   border-radius: 100%;
+}
+
+.titleDark::after {
+    background-color: black;
 }
