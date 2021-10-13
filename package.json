@@ -16,9 +16,5 @@
   "bugs": {
     "url": "https://github.com/SirMendacium/webpage/issues"
   },
-  "homepage": "https://github.com/SirMendacium/webpage#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "nunjucks": "^3.2.3"
-  }
+  "homepage": "https://github.com/SirMendacium/webpage#readme"
 }
