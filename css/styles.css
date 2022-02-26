@@ -1,15 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
+
 :root {
   --typewriterSpeed: 6s;
   --bgGradiant: linear-gradient(90deg, red, blue);
+  --fs-xl: 5rem;
+  --fs-600: 1.5rem;
+  --fs-500: 1.25rem;
+  --fs-400: 1rem;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
+@media (min-width: 40em) {
+  :root {
+    --fs-xl: 7rem;
+    --fs-600: 2rem;
+    --fs-400: 1.25rem;
+  }
+}
 
 
 #title {
   font-family: "Source Code Pro", monospace;
   position: relative;
   width: max-content;
+ 
 }
 
 #title::before,
@@ -108,4 +121,61 @@
   height:100%;
   width:100%;
   position:absolute;
+}
+
+.presentacion {
+  background-color: #7510F7;
+  color: white;
+  text-align: center;
+  height: 400px;
+  padding: 50px;
+  justify-content: center;
+}
+
+.cardCustom {
+  padding: 20px;
+}
+
+.habilidades {
+  position: relative;
+  top: -150px;
+  z-index: 5;
+  height: 500px;
+  text-align: center;
+}
+
+
+/*
+.cardCustom-left {
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+
+}
+
+.cardCustom-right {
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+*/
+.purple {
+  color: #7510F7;
+}
+
+.purple-bg {
+  background-color: #7510F7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.presentacion p {
+  display: inline-table;
+  width: 50%;
+
+  font-size: var(--fs-400);
+}
+
+.presentacion h2 {
+  font-size: var(--fs-600);
 }
