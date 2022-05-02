@@ -15,10 +15,7 @@
     --fs-600: 2rem;
     --fs-400: 1.25rem;
   }
-<<<<<<< HEAD
 
-=======
->>>>>>> 3d6cb11771542a6cd4ca2dd45a635ce9cc882736
 }
 
 
@@ -54,13 +51,13 @@
 
 .titleDark::before {
   background-color: dark;
-  animation: typewriter var(--typewriterSpeed) steps(16) 1s forwards;  back
+  animation: typewriter var(--typewriterSpeed) steps(16) 1s forwards;  
 }
 
 
 .titleWhite::before {
   background-color: white;
-  animation: typewriter var(--typewriterSpeed) steps(16) 1s forwards;  back
+  animation: typewriter var(--typewriterSpeed) steps(16) 1s forwards;  
 }
 
 #title::after {
@@ -82,11 +79,11 @@
   width: 100%;
 }
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 990px) {
   .headerImg {
     display: none;
   }
-<<<<<<< HEAD
+
   .experiencia {
     top: 200px;
     position: relative;
@@ -99,8 +96,7 @@
     top: 200px;
     position: relative;
   }
-=======
->>>>>>> 3d6cb11771542a6cd4ca2dd45a635ce9cc882736
+
 }
 
 .dark {
@@ -198,9 +194,5 @@ html {
 
 .presentacion h2 {
   font-size: var(--fs-600);
-<<<<<<< HEAD
 }
 
-=======
-}
->>>>>>> 3d6cb11771542a6cd4ca2dd45a635ce9cc882736
